@@ -6,8 +6,14 @@
     </head>
     <body>
         <h2>Это Главная страница сайта</h2>
-        <p><a href="content.php">Получить контент</a></p>
-        <p><a href="autorisationPage.php">Авторизоваться</a></p>
-        <p><a href="registrationPage.php">Зарегистрироваться</a></p>
+
+
+        <nav>
+            <p><a href="content.php">Получить контент</a></p>
+            <p><a href="autorisationPage.php">Авторизоваться</a></p>
+            <p><a href="registrationPage.php">Зарегистрироваться</a></p>
+        </nav>
+
+
     </body>
 </html>
