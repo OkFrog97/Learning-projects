@@ -39,12 +39,10 @@
         });
     </script>
 
+</form>
+    <nav>
     <a href="autorisationPage.php">Войти</a>
     <p><a href="index.php">На главную</a></p>
-
-
-
-
-</form>
+    </nav>
 </body>
 </html>
