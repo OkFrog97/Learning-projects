@@ -37,9 +37,10 @@
         });
     </script>
 
+    <nav>
     <p><a href="registrationPage.php">Зарегистрироваться</a></p>
     <p><a href="index.php">На главную</a></p>
-
+    <nav>
 </form>
 </body>
 </html>
