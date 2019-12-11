@@ -15,6 +15,10 @@ class autorisation
 
     private function logFinder()
     {
+        /*
+         * Return data from db.
+         * WOrk with real db must be here.
+         */
         $handle = fopen("db.txt", "a+");
         if ($handle) {
             while (($line = fgets($handle)) !== false) {
@@ -30,7 +34,7 @@ class autorisation
     {
         /*
          * return True sting if autorisation is succsessfuuuule.
-         * SHould be boolean?
+         * Should be boolean?
          */
         $userData = $this->logFinder();
         if (($this->userLog === $userData[0]) && ($this->userPass === str_replace(PHP_EOL, '', $userData[1]))) {
