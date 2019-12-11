@@ -28,7 +28,10 @@ class autorisation
 
     public function getAutorisation ()
     {
-
+        /*
+         * return True sting if autorisation is succsessfuuuule.
+         * SHould be boolean?
+         */
         $userData = $this->logFinder();
         if (($this->userLog === $userData[0]) && ($this->userPass === str_replace(PHP_EOL, '', $userData[1]))) {
             session_start();
