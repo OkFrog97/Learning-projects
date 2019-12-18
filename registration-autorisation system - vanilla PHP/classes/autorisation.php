@@ -16,6 +16,8 @@ class autorisation
         $this->userLog = $userLog;
         $this->userPass = $userPass;
         $this->userAutorisationInfo = $userLog . ':' . $userPass;
+        $this->username = 'root';
+        $this->password = '';
     }
 
     private function logFinder()
