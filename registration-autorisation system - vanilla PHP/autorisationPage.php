@@ -23,7 +23,7 @@
                 console.log(formData);
                 // Вставляем пост-запрос
                 $.post(
-                        "autorLogic.php",
+                        "autorisationLogic.php",
                         formData,
                         onAjaxSuccess
                     );
