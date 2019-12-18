@@ -66,16 +66,6 @@ class autorisation
         $dbh = null;
 
 
-
-
-
-
-
-
-
-
-
-
        /*
         if (($this->userLog === $userData[0]) && ($this->userPass === str_replace(PHP_EOL, '', $userData[1]))) {
             session_start();
