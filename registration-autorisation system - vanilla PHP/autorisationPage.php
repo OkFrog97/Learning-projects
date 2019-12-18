@@ -31,6 +31,9 @@
                 if (data=="True"){
                     $(location).attr('href','content.php');
                 }
+                else {
+                    console.log(data);
+                }
             }
             }
             );
