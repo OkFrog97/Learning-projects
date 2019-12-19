@@ -12,6 +12,7 @@ $login = 'fred';
 $pass = 'qwerty';
 
 
+/*
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
     foreach($dbh->query('SELECT  username, password from users') as $row) {
@@ -31,3 +32,4 @@ try {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
+*/
