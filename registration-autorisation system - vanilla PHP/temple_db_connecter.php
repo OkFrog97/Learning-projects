@@ -21,10 +21,12 @@ try {
     //test added values 1
     $addname = 'nagibator';
     $addpass = '123456789';
+    $stmp->execute();
 
     //test added values 2
     $addname = 'nagibator';
     $addpass = '123456789';
+    $stmp->execute();
 
     $dbh = null;
 
