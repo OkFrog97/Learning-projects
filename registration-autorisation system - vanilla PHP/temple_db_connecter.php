@@ -14,7 +14,7 @@ $pass = 'qwerty';
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
 
-    $stmp = $dbh->prepare("INSERT INTO users VALUES (:username, :password)");
+    $stmp = $dbh->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
     $params = [
         ':username'=> 'jehny',
         ':password'=> '0987654321',
