@@ -15,18 +15,11 @@ try {
     $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
 
     $stmp = $dbh->prepare("INSERT INTO users VALUES (:username, :password)");
-    $stmp->bindParam(':username', $addname);
-    $stmp->bindParam(':password', $addpass);
-
-    //test added values 1
-    $addname = 'nagibator';
-    $addpass = '123456789';
-    $stmp->execute();
-
-    //test added values 2
-    $addname = 'nagibator';
-    $addpass = '123456789';
-    $stmp->execute();
+    $params = [
+        ':username'=> 'jehny',
+        ':password'=> '0987654321',
+    ];
+    $stmp->execute($params);
 
     $dbh = null;
 
