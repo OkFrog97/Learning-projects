@@ -35,13 +35,6 @@ function setRegistration($log, $pass){
         print "Error!: " . $e->getMessage() . "<br/>";
         die();
     }
-
-
-
-
-
-
-
-
-
 }
+
+setRegistration($userLog, $userPass);
