@@ -1,10 +1,32 @@
 <?php
 //автозагружаем класс
-spl_autoload_register( function ($class_name){
-    include 'classes'.DIRECTORY_SEPARATOR.$class_name . '.php';
-});
+function setRegistration($log, $pass){
 
-$r = new registration($_POST['log'], $_POST['pass'], $_POST['repPass']);
+    // database settings
+    $username = 'root';
+    $password = '';
 
-echo $r->getRegistration();
+    //db function
+    try {
+        $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
+
+        //Готовим запрос
+        $stmp = $dbh->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
+
+        //вставляем параменты запроса и отправляем его
+        $params = [
+            ':username'=> $log,
+            ':password'=> $pass,
+        ];
+        $stmp->execute($params);
+        $dbh = null;
+        echo '<p>data add to database</p><br>';
+
+    } catch (PDOException $e) {
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
+    }
+}
+
+setRegistration($userLog, $userPass);
 
