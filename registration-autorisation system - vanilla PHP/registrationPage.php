@@ -30,7 +30,7 @@
                     );
                 function onAjaxSuccess (data){
                     alert(data);
-                    if (data=="Registration is done. Welcome."){
+                    if (data=="True"){
                         $(location).attr('href','content.php');
                     }
                 }
