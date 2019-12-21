@@ -28,7 +28,6 @@ function setRegistration($log, $pass){
         ];
         $stmp->execute($params);
         $dbh = null;
-        echo '<p>data add to database</p><br>';
         return "True";
 
     } catch (PDOException $e) {

@@ -9,7 +9,7 @@ $userPass = $_POST['pass'];
 
 //registration function
 
-function setRegistration($log, $pass){
+function getAutorisation($log, $pass){
 
     // database settings
     $username = 'root';
@@ -19,18 +19,8 @@ function setRegistration($log, $pass){
     try {
         $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
 
-        //Готовим запрос
-        $stmp = $dbh->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
 
-        //вставляем параменты запроса и отправляем его
-        $params = [
-            ':username'=> $log,
-            ':password'=> $pass,
-        ];
-        $stmp->execute($params);
-        $dbh = null;
-        echo '<p>data add to database</p><br>';
-        return "True"
+        return "True";
 
     } catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
@@ -38,4 +28,4 @@ function setRegistration($log, $pass){
     }
 }
 
-echo setRegistration($userLog, $userPass);
+echo getAutorisation($userLog, $userPass);
