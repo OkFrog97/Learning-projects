@@ -7,6 +7,20 @@ spl_autoload_register( function ($class_name){
 $userLog = $_POST['log'];
 $userPass = $_POST['pass'];
 
-$a = new autorisation($userLog, $userPass);
+//registration function
 
-echo $a->getAutorisation();
+function setRegistration($log, $pass){
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
