@@ -20,6 +20,11 @@ function getAutorisation($log, $pass){
         $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
         foreach($dbh->query('SELECT username, password FROM users;') as $row){
             if ( ($row['username']==$log)&&($row['password'])==$pass){
+
+                //работа с сессиями ВРЕМЕННО
+                session_start();
+                $_SESSION['autorisation'] = 'True';
+
                 return 'True';
             }
         }
