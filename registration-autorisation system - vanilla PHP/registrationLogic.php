@@ -28,6 +28,11 @@ function setRegistration($log, $pass){
         ];
         $stmp->execute($params);
         $dbh = null;
+
+        //работа с сессиями ВРЕМЕННО
+        session_start();
+        $_SESSION['autorisation'] = 'True';
+
         return "True";
 
     } catch (PDOException $e) {
