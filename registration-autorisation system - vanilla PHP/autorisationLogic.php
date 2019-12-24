@@ -18,7 +18,7 @@ function getAutorisation($log, $pass){
     //db function
     try {
         $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
-        foreach($dbh->query('SELECT username, password FROM users;')){
+        foreach($dbh->query('SELECT username, password FROM users;') as $row){
             if ( ($row['username']==$log)&&($row['password'])==$pass){
                 return 'True';
             }
