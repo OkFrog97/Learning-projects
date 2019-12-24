@@ -4,5 +4,10 @@
 
 class db
 {
+    // database settings
+    private $username = 'root';
+    private $password = '';
+
+
 
 }
