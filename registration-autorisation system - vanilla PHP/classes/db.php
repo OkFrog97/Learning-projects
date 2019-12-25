@@ -32,6 +32,34 @@ class db
         }
     }
 
+    public function setRegistration($log, $pass){
+
+        //db function
+        try {
+            $dbh = new PDO('mysql:host=localhost;dbname=test_shema', $username, $password);
+
+            //Готовим запрос
+            $stmp = $dbh->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
+
+            //вставляем параменты запроса и отправляем его
+            $params = [
+                ':username'=> $log,
+                ':password'=> $pass,
+            ];
+            $stmp->execute($params);
+            $dbh = null;
+
+            //работа с сессиями ВРЕМЕННО
+            session_start();
+            $_SESSION['autorisation'] = 'True';
+
+            return "True";
+
+        } catch (PDOException $e) {
+            print "Error!: " . $e->getMessage() . "<br/>";
+            die();
+        }
+    }
 
 
 
