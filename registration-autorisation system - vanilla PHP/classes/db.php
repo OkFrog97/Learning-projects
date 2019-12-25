@@ -27,7 +27,6 @@ class db
             return "False";
 
         } catch (PDOException $e) {
-            print "Error!: " . $e->getMessage() . "<br/>";
             die();
         }
     }
@@ -56,7 +55,6 @@ class db
             return "True";
 
         } catch (PDOException $e) {
-            print "Error!: " . $e->getMessage() . "<br/>";
             die();
         }
     }
