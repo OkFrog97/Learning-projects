@@ -6,7 +6,7 @@ $task = $_POST["task"];
 
 
 function validation ($sendData) {
-    if ($sendData) {
+    if ($sendData=='') {
         echo "Input task";
         exit();
     }
