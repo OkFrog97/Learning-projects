@@ -1,12 +1,14 @@
 <h1>ToDoList</h1>
 
-Ru:
+
+Список дел
+
 Приложение для обучения PDO.
 
-En:
-Simple app for learning PDO.
+
 ----
 php 7.3
 MySql 8.0
+----
+Клевый фронт, возможно, будет добавлен посже.
 
-Front? May be later.
