@@ -8,7 +8,21 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Привет!</h1>
+    <div calss="container">
+        <h1>ToDo list</h1>
+        <form action="/add.php" method="post">
+            <input type="text" name="task" id="task" placeholder="Must to do...">
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
 
     </body>
 
