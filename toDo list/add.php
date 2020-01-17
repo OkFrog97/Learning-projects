@@ -28,23 +28,20 @@ function dbConnect ($sendData){
 }
 
 
-function main ()
-{
-    //get user task information
-    $task = $_POST["task"];
 
-    //db connection
-    if (isValid($task)){
-        dbConnect($task);
-    }
-    else{
-        echo 'Input is empty';
-    }
+ //get user task information
+$task = $_POST["task"];
 
-    //redirect to the index
-    header ('Location: /');
-
+ //db connection
+if (isValid($task)){
+     dbConnect($task);
+}
+else{
+    echo 'Input is empty';
 }
 
-//start logic
-main();
+//redirect to the index
+header ('Location: /');
+
+
+
