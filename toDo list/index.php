@@ -21,6 +21,12 @@
     </div>
 
 
+    <?php
+        require 'configDB.php';
+
+    ?>
+
+
     </body>
 
 

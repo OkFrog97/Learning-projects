@@ -11,9 +11,10 @@ function isValid ($sendData)
 
 
 function dbConnect ($sendData){
-    //vars
-    $dsn = "mysql:host=localhost;dbname=todo_list";
-    $pdo = new PDO ($dsn, 'root', '');
+    //connect with db
+    require 'configDB.php';
+
+    //SQL queries
     $sql = 'INSERT INTO tasks(task) VALUES(:task)';
 
     //logic
