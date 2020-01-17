@@ -4,7 +4,6 @@
 function isValid ($sendData)
 {
     if ($sendData == '') {
-        echo "Input task";
         return False;
     }
     return True;
@@ -35,11 +34,15 @@ function main ()
     $task = $_POST["task"];
 
     //db connection
-
+    if (isValid($task)){
+        dbConnect($task);
+    }
+    else{
+        echo 'Input is empty';
+    }
 
     //redirect to the index
     header ('Location: /');
-
 
 }
 
