@@ -24,6 +24,12 @@
     <?php
         require 'configDB.php';
 
+        echo '<ul>';
+        $query = $pdo->query('SELECT * FROM tasks ORDER BY id DESC ');
+        while($row = $query->fetch(PDO::FETCH_OBJ)) {
+            echo '<li><b>'.$row->task.'</b></li>';
+        }
+        echo '</ul>'
     ?>
 
 
