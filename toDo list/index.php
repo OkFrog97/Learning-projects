@@ -13,7 +13,7 @@
     <div class="container">
         <h1>ToDo list</h1>
         <!--Переделать с использованием ajax!-->
-        <form action="/add.php" method="post">
+        <form action="logic.php" method="post">
             <input type="text" name="task" id="task" placeholder="Must to do..." class="form-control">
             <button type="submit" name="sendTask" class ="btn btn-success">Send</button>
 

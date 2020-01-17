@@ -41,7 +41,7 @@ else{
 }
 
 //redirect to the index
-header ('Location: /');
+header ('Location: /training projects/toDo list/');
 
 
 
