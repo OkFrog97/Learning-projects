@@ -8,3 +8,11 @@ body {
     background-color: #ccdef0;
     background-image: radial-gradient(circle 675px at center, #ffffff 0%, #ccdef0 100%);
 }
+
+.logo {
+    color:black;
+}
+
+.logo span {
+    color:lightgreen;
+}
