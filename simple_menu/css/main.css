@@ -3,21 +3,40 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.header{
+.header {
     width: 100%;
     height: 900px;
     background-color: #ccdef0;
     background-image: radial-gradient(circle 675px at center, #ffffff 0%, #ccdef0 100%);
 }
 
+.container {
+    width:1170px;
+    background-color:gray;
+    padding-top:100px;
+    padding-left:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-wrapper {
+    display:flex;
+    flex-direction: row;
+}
 .logo {
     color:black;
-    font-family: "Montserrat - Black";
+    font-family: "Montserrat";
     font-size: 28px;
     line-height:1;
-    font-weight:400;
+    font-weight:900;
 }
 
 .logo span {
     color:#5abb33;
+}
+
+.nav {
+    width:600px;
+    height:100px;
+    background-color: brown;
 }
