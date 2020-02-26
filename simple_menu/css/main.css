@@ -11,8 +11,12 @@ body {
 
 .logo {
     color:black;
+    font-family: "Montserrat - Black";
+    font-size: 28px;
+    line-height:1;
+    font-weight:400;
 }
 
 .logo span {
-    color:lightgreen;
+    color:#5abb33;
 }
