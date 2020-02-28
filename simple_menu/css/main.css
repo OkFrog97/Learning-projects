@@ -64,3 +64,8 @@ body {
 .nav_link:hover{
     text-decoration: underline;
 }
+
+.header-content {
+    background-color: gray;
+    padding: 50px 0;
+}
