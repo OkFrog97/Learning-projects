@@ -71,9 +71,11 @@ body {
 }
 
 .header-desc{
-    
+    background-color: cornsilk;
+    padding: 50px 0;
 }
 
 .header-photo{
-
+    background-color: bisque;
+    padding: 50px 0;
 }
