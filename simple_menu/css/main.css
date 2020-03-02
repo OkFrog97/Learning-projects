@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
 }
 
 .header {
@@ -66,17 +68,35 @@ body {
 }
 
 .header-content {
-    background-color: gray;
-    padding: 50px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .header-desc{
-    background-color: cornsilk;
-    padding: 50px 0;
     width: 500px;
+}
+
+.header-title {
+    color: #000000;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.header-text {
+    font-size:20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.header-btn {
+    height: 65px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 40px;
+    background-color: #fadb60;
+    background-image: linear-gradient(to top, #ffcc00 0%, #fadb60 100%);
 }
 
 .header-photo{
