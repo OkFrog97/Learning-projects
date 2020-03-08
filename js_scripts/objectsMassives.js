@@ -15,3 +15,11 @@ function userSum (numbers) {
 }
 
 console.log(userSum(userRange(1, 10)));
+
+function userRangeWithSteps (start, end, step = 1){
+    let rangeMas = [];
+    for (let i = start; i <= end; i += step) {
+        rangeMas.push(i);
+    }
+    return rangeMas;
+}
