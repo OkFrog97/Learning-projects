@@ -1,0 +1,1 @@
+let flatting = (mas) => mas.reduce( (a, b) => a.concat(b));
