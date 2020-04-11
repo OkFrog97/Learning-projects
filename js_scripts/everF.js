@@ -9,3 +9,5 @@ let a = [1, 2, 3, 4, 5];
 
 //return false
 console.log(every(a, el => el % 2 == 0));
+
+let every
