@@ -15,24 +15,24 @@ div:hover{
 }
 
 .column1 {
-    width: 200px;
+    width: 20%;
     float: left;
 }
 
 .column2 {
-    width: 40px;
+    width: 70%;
     float: left;
 }
 
 .column3{
-    width: 40px;
+    width: 20%;
     float: right;
   }
 
  
 .container {
     float: right;
-    width: 200px;
+    width: 70%;
 }
 
 .footer {
