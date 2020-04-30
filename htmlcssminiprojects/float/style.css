@@ -4,36 +4,70 @@ body {
 }
 
 div {
+    
     min-height: 50px;
-    max-height: 100px;
     border: 2px solid burlywood;
-    margin: 10px 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-div:hover{
-    background: lightslategray;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.column1 {
+li {
+    padding: 10px;
+}
+
+li:hover{
+    background: slategray;
+}
+
+a{
+    text-decoration: none;
+    color: bisque;
+}
+
+
+
+
+
+.menu {
     width: 20%;
     float: left;
 }
 
-.column2 {
+
+
+.container {
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.content {
     width: 70%;
     float: left;
 }
 
-.column3{
-    width: 20%;
+
+
+
+
+
+
+
+
+
+.sidebar{
+    width: 30%;
     float: right;
   }
 
  
-.container {
-    float: right;
-    width: 70%;
-}
+
 
 .footer {
     clear: both;
