@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-   /* background: url("img/background.jpg");*/
-    background: gray;
+    background: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -15,13 +14,14 @@ body {
     padding: 20px;
     max-width: 1440px;
     max-height: 1080px;
-    background-color: hsla(0, 0%, 0%, 0.61);
+    background-color: hsla(0, 0%, 0%, 0.66);
 }
 
 .team-title {
     margin: 0 50px 26px 50px;
     padding: 60px 50px 30px 50px;
     text-align: center;
+    
 }
 
 .about-team {
@@ -32,8 +32,8 @@ body {
 }
 
 .team-container {
-    width: 1335px;
-    height: 390px;
+    width: 1150px;
+    height: 350px;
     margin-left: 10px;
 }
 
@@ -52,6 +52,7 @@ body {
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+    
 }
 
 .av1 {
