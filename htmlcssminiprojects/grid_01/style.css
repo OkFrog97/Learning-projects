@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: 800;
+    color: burlywood;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid burlywood;
+    border-radius: 2px;
+}
