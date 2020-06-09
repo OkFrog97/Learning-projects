@@ -23,8 +23,70 @@ ul {
 	padding-left: 1.4em;
 	list-style: square;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
 /* конец кода сброса стилей браузера */
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	/*Временная визуальная граница*/
+	border: 1px dashed #ccc;
+}
+
+header {
+	background-color: #ffcc00;
+	text-align: center;
+	padding: 20px;
+
+}
+
+.logo {
+	font-size: 2.4em;
+}
+
+.logo::first-letter {
+	color: red;
+}
+
+table, tr, th {
+	font-size: 1em;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th {
+	padding: 10px 5px 5px 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
