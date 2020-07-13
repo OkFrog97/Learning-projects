@@ -11,28 +11,28 @@ window.addEventListener ("load", function (){
     // Разбираемся с функциями высшего порядка
     
     //Функция filter фильтрует по параметру. Тестовая ф. возвращает живые языки
-    let lived = filter(SCRIPTS, script => script.living);
+    // let lived = filter(SCRIPTS, script => script.living);
     //Выводим в консоль все живые языки
-    for (let el in lived){
-        console.log(lived[el].name);
-    };
-
-    
+    // for (let el in lived){
+    //     console.log(lived[el].name);
+    // };
+    //использование стандартного фильтра
+    //console.log(SCRIPTS.filter(s => s.direction == "ttd"));
     
     
 });
 
 
 
-function filter (array, test){
-    let passed = [];
-    for (let el of array){
-        if ( test(el) ){
-            passed.push(el);
-        }
-    }
-    return passed;
-}
+// function filter (array, test){
+//     let passed = [];
+//     for (let el of array){
+//         if ( test(el) ){
+//             passed.push(el);
+//         }
+//     }
+//     return passed;
+// }
 
 
 
