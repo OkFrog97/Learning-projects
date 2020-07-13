@@ -6,16 +6,33 @@ window.addEventListener ("load", function (){
     // Цепляясь к полю просмотра результатов скрипта
     // Да, это лучше, чем скучный консоль лог на пустой странице
     let field = document.getElementById("view");
-    field.innerHTML = "Я текст, добавленный скриптом js!";
+    field.innerHTML = "Я текст, добавленный скриптом js!<br>";
 
     // Разбираемся с функциями высшего порядка
-    // Задача № 1. Как в этом файле получить данные из другого скрипта(примера из книги)
+    
+    //Функция filter фильтрует по параметру. Тестовая ф. возвращает живые языки
+    let lived = filter(SCRIPTS, script => script.living);
+    //Выводим в консоль все живые языки
+    for (let el in lived){
+        console.log(lived[el].name);
+    };
+
     
     
-    console.dir(SCRIPTS[0]);
+    
 });
 
 
+
+function filter (array, test){
+    let passed = [];
+    for (let el of array){
+        if ( test(el) ){
+            passed.push(el);
+        }
+    }
+    return passed;
+}
 
 
 
