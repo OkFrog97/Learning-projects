@@ -46,6 +46,41 @@ window.addEventListener("load", function(){
     killerRabbit.type = "Зайка-Убивайка";
     killerRabbit.speak("(л)Убить всех человеков, кроме Мазая!"); //метод из прототипа;
 
+    //Классы
+    
+    function makeRabbit (type){
+        let rabbit = Object.create(protoRabbit);
+        rabbit.type = type;
+        return rabbit;
+    }
+
+    let bloodyRabbit = makeRabbit("Ангел кровавый");
+    bloodyRabbit.speak("Я пожру ваши сны!");
+
+    //конструктор
+    function Rabbit(type){
+        this.type = type;
+    }
+
+    Rabbit.prototype.speak = function (line){
+        console.log(`${this.type} кролик говорит: ${line}!`);
+    }
+
+    let wierdRabbit = new Rabbit ("Странный");
+    wierdRabbit.speak("Никто не видел Шалтая-Болтая?");
+
+    class uRabbit {
+        constructor (type){
+            this.type = type;
+        }
+        speak (line){
+            console.log(`${this.type} кролик говорит: ${line}!`);
+        }
+    }
+
+    let blackRabbit = new uRabbit("Черный");
+    blackRabbit.speak("А это не расизм?");
+
 
     
 });
