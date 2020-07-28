@@ -36,21 +36,33 @@ body {
 }
 
 .wrapper {
-	width: 1140px;
+    max-width: 1140px;
+    height: 100%;
 	margin: 0 auto;
 	/*Временная визуальная граница*/
-	border: 3px solid black;
+    border: 1px dashed whitesmoke;
 }
-
 
 .header {
     width: 100%;
     height: 750px;
     background-image: url(/img/background.png);
-    background-color: rgb(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
+.headerWrapper{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.45);
+}
 
+.menu {
+    margin-top: 40px;
+    /*Заменить на адекватное значение!*/
+    margin-bottom: 200px; 
+}
 
 
 
