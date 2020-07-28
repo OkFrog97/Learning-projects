@@ -1,3 +1,3 @@
-window.addEventListener(function(){
-    consloe.log("Hello, world!");
+window.addEventListener("load",function(){
+    console.log("Hello, world!");
 });

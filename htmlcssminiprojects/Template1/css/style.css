@@ -1,8 +1,69 @@
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* конец кода сброса стилей браузера */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.wrapper {
+	width: 1140px;
+	margin: 0 auto;
+	/*Временная визуальная граница*/
+	border: 3px solid black;
+}
+
+
 .header {
     width: 100%;
-    height: 200px;
-    background: rgba(93, 0, 150, 0.2);
+    height: 750px;
+    background-image: url(/img/background.png);
+    background-color: rgb(0, 0, 0, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .body {
     width: 100%;
     height: 200px;
@@ -13,3 +74,4 @@
     height: 200px;
     background: rgba(63, 12, 50, 0.2);
 }
+*/
