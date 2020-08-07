@@ -1,0 +1,27 @@
+@import "header.scss";
+@import "wrapper.scss";
+
+
+$fz: 20px;
+
+body {
+    font-family: sans-serif;
+    color: blue;
+    font-size: $fz;
+    .container {
+        border: 2px dashed paleturquoise;
+        border-radius: 1px;
+        color: palevioletred;
+        font-size: 10px;
+    }
+
+    a {
+        color: lime;
+        text-decoration: none;
+        &:hover {
+            color: rgba(175, 12, 99, 0.863);
+            font-size: $fz + 10px;
+        }
+     
+    }
+}

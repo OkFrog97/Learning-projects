@@ -1,0 +1,36 @@
+header {
+  background-color: mediumorchid;
+  color: whitesmoke;
+  width: 100%;
+  text-align: 100%;
+  padding: 10px;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+  color: blue;
+  font-size: 20px;
+}
+
+body .container {
+  border: 2px dashed paleturquoise;
+  border-radius: 1px;
+  color: palevioletred;
+  font-size: 10px;
+}
+
+body a {
+  color: lime;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: rgba(175, 12, 99, 0.863);
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
