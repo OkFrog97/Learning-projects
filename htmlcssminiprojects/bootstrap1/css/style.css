@@ -1,0 +1,9 @@
+body {
+    margin-top: 50px;
+    background: #333;
+    color: #fff;
+}
+
+.card {
+    padding: 20px;
+}

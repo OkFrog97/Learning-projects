@@ -1,9 +1,10 @@
+@charset "UTF-8";
 header {
-  background-color: mediumorchid;
+  background-color: rgba(186, 85, 211, 0.6);
   color: whitesmoke;
   width: 100%;
-  text-align: 100%;
   padding: 10px;
+  text-align: center;
 }
 
 .wrapper {
@@ -11,10 +12,14 @@ header {
   margin: 0 auto;
 }
 
+body a {
+  background-color: tomato;
+}
+
 body {
   font-family: sans-serif;
   color: blue;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 body .container {
@@ -31,6 +36,7 @@ body a {
 
 body a:hover {
   color: rgba(175, 12, 99, 0.863);
-  font-size: 30px;
+  font-size: 25px;
+  content: "ДыкЭтоПермь";
 }
 /*# sourceMappingURL=style.css.map */
